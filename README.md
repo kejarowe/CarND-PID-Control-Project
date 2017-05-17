@@ -4,7 +4,7 @@ Self-Driving Car Engineer Nanodegree Program
 ---
 For this project I implemented a PID feedback controller that generated the steering commands required to drive the below car in a simulator based on the Unity Engine
 
-[![PID Feedback Controlled Car in Simulator](doc/pid_picture.jpg)](doc/pid_video.mp4)
+[![PID Feedback Controlled Car in Simulator](doc/pid_picture.png)](doc/pid_video.mp4)
 
 To find functional gains, I used the twiddle algorithm which is an implementaion of gradient descent. To generate the cost for a given set of gains, I ran the simulation for up to 110 seconds. If the vehicle crashed or left the track during the simulation, I imposed a cost at a very high rate for the remainder of the alloted simulation time. To reset the simulation after testing each set of gains, I used an Automator workflow in OS X. By recording keystrokes and mouse clicks in the Automator workflow, I was able to reset the simulator using a command line program.
 
